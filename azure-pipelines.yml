@@ -20,7 +20,7 @@ steps:
     command: buildAndPush
     repository: $(imageRepository)
     dockerfile: $(dockerfilePath)
-    containerRegistry: 'week3-acr-connection'
+    containerRegistry: 'week3-acr-connection-docker'
     tags: |
       $(tag)
       latest

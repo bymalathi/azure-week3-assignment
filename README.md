@@ -96,3 +96,24 @@ Azure Container Registry (ACR)
 - Docker image built successfully.
 - Docker image pushed to Azure Container Registry.
 - Azure DevOps pipeline configured for CI.
+
+
+---
+
+## Docker Image
+
+The application is packaged into a Docker image using the provided Dockerfile.
+
+The Azure DevOps pipeline automatically builds the image and pushes it to Azure Container Registry (ACR).
+
+Image Name:
+
+```
+myapp
+```
+
+Registry:
+
+```
+malathiweek3acr.azurecr.io
+```

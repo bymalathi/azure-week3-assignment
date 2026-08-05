@@ -6,7 +6,6 @@ pool:
 
 variables:
   imageRepository: 'myapp'
-  containerRegistry: 'malathiweek3acr'
   dockerfilePath: 'Dockerfile'
   tag: '$(Build.BuildId)'
 
@@ -20,7 +19,7 @@ steps:
     command: buildAndPush
     repository: $(imageRepository)
     dockerfile: $(dockerfilePath)
-    containerRegistry: 'week3-acr-connection-docker'
+    containerRegistry: 'week3-acr-connection-docker'  # Uses the service connection
     tags: |
       $(tag)
       latest
